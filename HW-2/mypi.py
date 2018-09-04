@@ -10,7 +10,7 @@ def calc_earth_circum(pi):
 # The Leibnitz Series
 def lsm_pi (n):
     tempPi = 0
-    for i in range(0, n+1):
+    for i in range(0, n+1): #iterate through 10^i is passed in, when i = 1, the fuction goes through 10 times, 2 = 100, 3= 1000
         denom = (2*i + 1)
         num = ((-1)**i)
         tempPi += num/denom
@@ -50,6 +50,7 @@ Which series do you want to use?
             3) The Adamchick Series
 Choose a number 1 to 3:  '''))
     print(' ' )
+    #Logic that determines which series you want to test
     if series == '1':
         print('                 Tests the Leibnitz Series')
         for i in range (1,4):
