@@ -1,5 +1,6 @@
 # Stephen Stammen
-#HW 2 - Part 2
+# HW 2 - Part 2
+# Outputs were written at the bottom
 import math as m
 
 # Calculate the circumference of Earth
@@ -12,16 +13,16 @@ def calc_earth_circum(pi):
 def lsm_pi (M):
     tempPi = 0
     i = 0
-    while 10**-(M+1) < abs(m.pi - tempPi*4): #While loop continues until the calculated pi is within the tolerence of M digits.
+    while 10**-(M+1) < abs(m.pi - tempPi*4): # While loop continues until the calculated pi is within the tolerence of M digits. TempPi *4 becasue equation only calcs pi
         denom = (2*i + 1)
         num = ((-1)**i)
         tempPi += num/denom
         i += 1
     print('Pi calculated to the', str(M), 'digit accurately')
     print(str(i) + ' terms used')
-    pi = tempPi * 4
+    pi = tempPi * 4 # Multiplied by 4 becasue tempPi = 1/4 pi
     calc_earth_circum(pi)
-    return pi #higher M = more digits of pi
+    return pi # higher M = more digits of pi
 
 # The Nilankatha Series - Using a while loop to check if its calculation of pi is within the actual value of pie.
 def nsm_pi(M):
@@ -54,7 +55,7 @@ def aw_pi(M):
     calc_earth_circum(pi)
     return pi
     
-# Choose a series
+# Choose a series - This allows the user to choose which series they want to run
 def choose_series():
     series = str(input('''
 --------------------------------------------------------------------------------------------------
@@ -67,7 +68,7 @@ Choose a number 1 to 3:  '''))
     M = int(input("Input an integer M:      "))
     if series == '1':
         print('\n                 THE LEIBNITZ SERIES')
-        print('Pi is:     ', str(lsm_pi(M)))
+        print('Pi is:     ', str(lsm_pi(M))) # These are converted to strings becasue as to not cause an error
         print()
     elif series == '2':
         print('\n                 THE NILANKATHA SERIES')
@@ -78,7 +79,7 @@ Choose a number 1 to 3:  '''))
         print('Pi is:     ', str(aw_pi(M)))
         print()
     else:
-        print('Was it that hard to pick a number between 1 and 3')
+        print('Was it that hard to pick a number between 1 and 3') # This is a joke
 
 
 # The main function
@@ -86,7 +87,7 @@ def main():
     choose_again = 'yes'
     while choose_again.lower() == 'yes':
         choose_series()
-        choose_again = str(input('Would you like to try another series equation?   yes / no   '))
+        choose_again = str(input('Would you like to try another series equation?   yes / no   ')) #This allows the user to choose another series equation to try
 
 # Call main function
 main()
