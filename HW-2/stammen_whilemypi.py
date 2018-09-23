@@ -114,7 +114,3 @@ main()
 # Earths circumference is 40023.890406518505 km.
 # Pi is:      3.141592653572881
 
-
-
-
-
