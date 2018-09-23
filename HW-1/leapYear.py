@@ -1,3 +1,4 @@
+
 #Leap Year HW 1 - Part 1
 #Created by Stephen Stammen
 
@@ -6,7 +7,6 @@
 #Get input on the range of years
 year1 = int(input('Enter the start year:  '))
 year2 = int(input('Enter the end year:  '))
-
 
 myCount = 0 #initialize counter
 
@@ -24,16 +24,6 @@ for year in range(year1, year2 + 1): #for loop to count the number of years betw
     elif year %4 != 0: #Not evenly divisible by 4
         print(year, ':  NOT LEAP YEAR')
 
-
 print('There are ', str(myCount), 'leap years between ', str(year1), 'and', str(year2)) #print the number of years between the range
 
-
-
 #Leap years between 1600, 3200:    389
-
-
-
-
-
-
-
