@@ -99,5 +99,3 @@ main()
         # Leibnitz Series:     40150.025929644 km
         # Nilakantha Series:     40023.893407670 km
         # Adamchick Series:     40023.890406733 km
-
-
