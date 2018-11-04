@@ -29,7 +29,7 @@ def main():
         allFirstAces.append(firstAce)
         i += 1
     acePosTotal = sum(allFirstAces) # This is all the first aces positions added together
-    print('The sum of all the first ace position is:  ', str(acePosTotal))
+    print('The sum of all the first ace positions is:  ', str(acePosTotal))
     acePosAvg = acePosTotal/(trials+1) # This divides the total ace positions by the number of trials to determine the average first ace postion
     print('The average first ace position is at approximately', str(round(acePosAvg, 3)))
 main()
